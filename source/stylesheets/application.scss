@@ -6,6 +6,7 @@
 $header-color: #346b8c;
 $subhead-color: #0e3f54;
 $link-color: #0e3f54;
+$text-box-color: rgba(0, 0, 0, 0.1);
 
 @mixin flexbox($direction, $align: center) {
   display: -webkit-box;
@@ -41,7 +42,7 @@ $link-color: #0e3f54;
   display: block;
   color: white;
   text-align: center;
-  background-color: #05b5e6;
+  background-color: $text-box-color;
   @include border-radius(5px);
   border-bottom: none;
   &:hover {
@@ -74,12 +75,12 @@ html {
 }
 
 code {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: $text-box-color;
   font-family: "Source Code Pro", Monaco, monospace;
   font-size: 15px;
   font-weight: 600;
   padding: 0 2px 0 2px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid $text-box-color;
   @include border-radius(3px);
 }
 
@@ -123,7 +124,7 @@ code {
     margin: -5px;
   }
   ul {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $text-box-color;
     @include border-radius(5px);
     list-style: none;
     padding: 10px;
@@ -146,7 +147,7 @@ code {
 }
 
 #intro {
-  @include important(rgba(255, 255, 255, 0.7));
+  @include important($text-box-color);
 }
 
 #header {
@@ -185,6 +186,10 @@ code {
   }
   img {
     display: block;
+  }
+  .footer-logo {
+    width: 220px;
+    padding-right: 15px;
   }
   #navigation {
     @include flexbox(vertical, center);
