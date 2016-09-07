@@ -21,7 +21,7 @@ en:
     docs: "Docs"
     team: "Team"
     blog: "Blog"
-    repository: "Repository"
+    repo: "Repo"
     toggle_navigation: "Toggle navigation"
   search:
     placeholder: "Type to search..."
