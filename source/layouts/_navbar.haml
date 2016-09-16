@@ -6,7 +6,10 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %b= link_to 'Bundler', '/', class: 'navbar-brand'
+      = link_to('/', class: 'navbar-brand') do
+        = image_tag('bundler-icon.png', class: 'logo')
+        %b Bundler
+        %span.current-version= current_version
 
     .collapse.navbar-collapse{id: 'bs-navbar-collapse'}
       %ul.nav.navbar-nav.navbar-right

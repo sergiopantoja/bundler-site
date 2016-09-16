@@ -4,6 +4,17 @@
 
 .navbar-brand {
   font-size: 32px;
+  margin: 0;
+
+  .logo {
+    display: inline;
+    width: 25px;
+    margin-top: -5px;
+  }
+
+  .current-version {
+    font-size: 18px;
+  }
 }
 
 .navbar {
