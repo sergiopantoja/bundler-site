@@ -2,12 +2,6 @@ $larger-font-size: 18px;
 $header-height: 200px;
 $navbar-height: 50px;
 
-@font-face {
-  font-family: SancoaleSlab;
-  font-style:  normal;
-  src: url('fonts/SancoaleSlabNormRegular.otf') format("opentype");
-}
-
 @import "code.css";
 @import "bootstrap-overrides";
 
