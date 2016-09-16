@@ -2,7 +2,8 @@ $larger-font-size: 18px;
 $header-height: 200px;
 $navbar-height: 50px;
 
-@import "code.css";
+@import "fonts";
+@import "code";
 @import "bootstrap-overrides";
 
 @import "bootstrap-sprockets";
